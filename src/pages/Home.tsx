@@ -29,15 +29,15 @@ export default function Home() {
               Institutional Crypto Platform
             </motion.div>
 
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="flex-1">
+            <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+              <div className="flex-1 text-center lg:text-left">
                 <motion.h1
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 }}
-                  className="text-6xl font-extrabold tracking-tighter leading-none"
+                  className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tighter leading-[1.1] md:leading-none"
                 >
-                  Design the <span className="text-blue-500">Future</span> <br />
+                  Design the <span className="text-blue-500">Future</span> <br className="hidden sm:block" />
                   of your Wealth.
                 </motion.h1>
 
@@ -45,7 +45,7 @@ export default function Home() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="text-[#a1a1aa] mt-6 max-w-[500px] leading-relaxed"
+                  className="text-[#a1a1aa] mt-6 max-w-[500px] leading-relaxed mx-auto lg:mx-0 text-sm sm:text-base"
                 >
                   Professional-grade portfolio tracking and market analysis for the modern digital asset investor. Join the elite circle of Ruben Brouwer.
                 </motion.p>
@@ -56,7 +56,7 @@ export default function Home() {
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.3, duration: 1 }}
-                className="w-full md:w-[300px] h-[300px] relative"
+                className="w-full sm:w-[250px] md:w-[300px] h-[250px] md:h-[300px] relative"
               >
                 <Canvas shadows camera={{ position: [0, 0, 4], fov: 40 }}>
                   <Stage environment="city" intensity={0.5}>
@@ -73,20 +73,20 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="bg-[#111111] border border-white/10 rounded-[24px] p-8 space-y-6 h-[320px] flex flex-col"
+            className="bg-[#111111] border border-white/10 rounded-[24px] p-6 sm:p-8 space-y-6 h-auto sm:h-[320px] flex flex-col"
           >
-            <div className="flex gap-12">
+            <div className="flex flex-col sm:flex-row gap-8 sm:gap-12">
               <div className="flex flex-col gap-1">
-                <span className="text-[12px] text-[#a1a1aa] uppercase tracking-widest">Portfolio Value</span>
-                <span className="text-3xl font-bold">$1,242,084.50</span>
+                <span className="text-[10px] sm:text-[12px] text-[#a1a1aa] uppercase tracking-widest">Portfolio Value</span>
+                <span className="text-2xl sm:text-3xl font-bold">$1,242,084.50</span>
               </div>
               <div className="flex flex-col gap-1">
-                <span className="text-[12px] text-[#a1a1aa] uppercase tracking-widest">24h Change</span>
-                <span className="text-3xl font-bold text-[#10b981]">+$42,104.12</span>
+                <span className="text-[10px] sm:text-[12px] text-[#a1a1aa] uppercase tracking-widest">24h Change</span>
+                <span className="text-2xl sm:text-3xl font-bold text-[#10b981]">+$42,104.12</span>
               </div>
             </div>
 
-            <div className="flex-grow bg-gradient-to-r from-transparent via-blue-500/5 to-transparent rounded-xl relative overflow-hidden">
+            <div className="flex-grow min-h-[100px] bg-gradient-to-r from-transparent via-blue-500/5 to-transparent rounded-xl relative overflow-hidden mt-4">
               <div className="absolute bottom-5 left-0 w-full h-20 bg-gradient-to-t from-blue-500/10 to-transparent" />
               <div className="absolute bottom-10 left-0 w-full h-[2px] bg-blue-500 shadow-[0_0_20px_rgba(59,130,246,0.3)] transform -skew-y-3" />
             </div>

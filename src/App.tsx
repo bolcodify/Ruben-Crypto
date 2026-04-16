@@ -14,7 +14,7 @@ export default function App() {
         <Background3D />
         <Navbar />
 
-        <main className="pt-32 max-w-[1024px] mx-auto px-16">
+        <main className="pt-32 max-w-[1024px] mx-auto px-4 sm:px-8 lg:px-16">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/markets" element={<Markets />} />
@@ -25,18 +25,19 @@ export default function App() {
         </main>
 
         {/* Footer */}
-        <footer className="border-t border-white/5 py-12 px-16 max-w-[1024px] mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+        <footer className="border-t border-white/5 py-12 px-4 sm:px-8 lg:px-16 max-w-[1024px] mx-auto">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
             <div className="flex items-center gap-2">
-              <span className="font-bold tracking-tighter">RUBEN BROUWER</span>
+              <span className="font-bold tracking-tighter uppercase">RUBEN BROUWER</span>
             </div>
-            <div className="flex gap-8 text-sm text-[#a1a1aa]">
+            <div className="flex flex-wrap justify-center gap-6 text-sm text-[#a1a1aa]">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
               <a href="#" className="hover:text-white transition-colors">Contact</a>
             </div>
-            <div className="text-[#a1a1aa] text-sm">
-              © 2024 Ruben Brouwer. All rights reserved.
+            <div className="text-[#a1a1aa] text-sm space-y-1">
+              <p>© 2024 Ruben Brouwer. All rights reserved.</p>
+              <p className="text-[10px] tracking-widest opacity-60">Developed by BolCodify</p>
             </div>
           </div>
         </footer>

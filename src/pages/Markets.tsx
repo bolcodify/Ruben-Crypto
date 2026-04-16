@@ -14,29 +14,29 @@ const marketData = [
 export default function Markets() {
   return (
     <div className="space-y-12 pb-20">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
-        <div>
-          <h1 className="text-4xl font-bold tracking-tight">Market Overview</h1>
-          <p className="text-[#a1a1aa] mt-2">Real-time data for the world's leading digital assets.</p>
+      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
+        <div className="text-center lg:text-left w-full lg:w-auto">
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight">Market Overview</h1>
+          <p className="text-[#a1a1aa] mt-2 text-sm sm:text-base">Real-time data for the world's leading digital assets.</p>
         </div>
-        <div className="flex items-center gap-4 w-full md:w-auto">
-          <div className="relative flex-grow md:w-64">
+        <div className="flex items-center gap-3 w-full lg:w-auto">
+          <div className="relative flex-grow lg:w-64">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#a1a1aa]" />
             <input 
               type="text" 
               placeholder="Search assets..." 
-              className="w-full bg-[#111111] border border-white/10 rounded-xl py-2 pl-10 pr-4 text-sm focus:outline-none focus:border-blue-500 transition-colors"
+              className="w-full bg-[#111111] border border-white/10 rounded-xl py-2.5 pl-10 pr-4 text-sm focus:outline-none focus:border-blue-500 transition-colors"
             />
           </div>
-          <button className="p-2 bg-[#111111] border border-white/10 rounded-xl hover:bg-white/5 transition-colors">
+          <button className="p-2.5 bg-[#111111] border border-white/10 rounded-xl hover:bg-white/5 transition-colors">
             <Filter className="w-5 h-5 text-[#a1a1aa]" />
           </button>
         </div>
       </div>
 
-      <div className="bg-[#111111] border border-white/10 rounded-[32px] overflow-hidden">
+      <div className="bg-[#111111] border border-white/10 rounded-[24px] sm:rounded-[32px] overflow-hidden">
         <div className="overflow-x-auto">
-          <table className="w-full text-left">
+          <table className="w-full text-left min-w-[700px]">
             <thead>
               <tr className="border-b border-white/5 text-[12px] text-[#a1a1aa] uppercase tracking-widest">
                 <th className="px-8 py-6 font-semibold">Asset</th>
